@@ -5,8 +5,10 @@
     --darksouls3-background: #a07903;
     --border-color-black-bg: #fff5;
     --border-color-white-bg:rgba(61, 61, 61, 0.333);
-    --shadow-color-bloodborne: rgba(219, 86, 33, 0.753);
-    --shadow-color-ds3: rgba(249, 253, 42, 0.288);
+    --shadow-color-ds: rgb(188 215 255 / 75%);
+    --shadow-color-ds2: rgb(255 124 124 / 75%);
+    --shadow-color-bloodborne2: rgb(255 255 255 / 75%);
+    --shadow-color-ds3: rgb(255 223 68 / 75%);
     --w-image: 500px;
     --calcular: calc(3 / 2);
 }
@@ -104,19 +106,8 @@ header nav{
     pointer-events: none;
 }
 
-.carrossel .lista::after{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    content: '';
-    background-color: var(--shadow-color-ds3);
-    width: 300px;
-    height: 200px;
-    z-index: 10;
-    pointer-events: none;
-    border-radius: 30px 120px 200px 230px;
-    filter: blur(100px);
-}
+
+
 
 .carrossel .lista .item{
     position: absolute;
@@ -143,16 +134,16 @@ header nav{
 .carrossel .lista .item .image img{
     width: 85%;
     margin-bottom: 20px;
-    filter: drop-shadow( 0px 80px 120px var(--shadow-color-ds3));
 }
 
 .carrossel .lista .item .image figcaption{
     font-family: "adobe-garamond-pro", serif;
     font-weight: bold;
     font-size: 2em;
-    text-align: right;
+    text-align: center;
     margin-bottom: 30px;
     width: 70%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
 }
 
 .carrossel .lista .item .conteudo-principal{
@@ -179,15 +170,7 @@ header nav{
 }
 
 .carrossel .lista .item .conteudo-principal .conteudo .trailer{
-    background-color: #5f4801;
-    color: #fff;
-    padding: 10px 30px;
-    font-family: "adobe-garamond-pro", serif;
-    font-size: large;
-    font-weight: 500;
-    border: none;
-    margin-top: 20px;
-    border-radius: 20px;
+
 }
 
 .flecha{
@@ -290,4 +273,197 @@ header nav{
 
 .flecha{
     z-index: 10;
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraBB{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    content: '';
+    background-color: var(--shadow-color-bloodborne2);
+    width: 500px;
+    height: 100px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 300px 10px 250px 230px;
+    filter: blur(80px);
+ 
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraBB::after{
+    position: absolute;
+    top: 650px;
+    left: 800px;
+    content: '';
+    background-color: var(--shadow-color-bloodborne2);
+    width: 400px;
+    height: 200px;
+    filter: blur(100px);
+}
+
+.carrossel .lista .item .image.auraImgBB img{
+    filter: drop-shadow( 0px -40px 40px black);
+}
+
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs{
+    position: absolute;
+    top: 150px;
+    left: 45px;
+    content: '';
+    background-color: var(--shadow-color-ds);
+    width: 900px;
+    height: 80px;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 300px 10px 250px 230px;
+    filter: blur(120px);
+ 
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs::after{
+    position: absolute;
+    top: 650px;
+    left: 500px;
+    content: '';
+    background-color: var(--shadow-color-ds);
+    width: 400px;
+    height: 200px;
+    filter: blur(100px);
+}
+
+.carrossel .lista .item .image.auraImgDs img{
+    filter: drop-shadow( 0px 70px 60px rgb(0, 0, 0));
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs2{
+    position: absolute;
+    top: 150px;
+    left: 45px;
+    content: '';
+    background-color: var(--shadow-color-ds2);
+    width: 900px;
+    height: 80px;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 300px 10px 250px 230px;
+    filter: blur(120px);
+ 
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs2::after{
+    position: absolute;
+    top: 650px;
+    left: 500px;
+    content: '';
+    background-color: var(--shadow-color-ds2);
+    width: 400px;
+    height: 200px;
+    filter: blur(100px);
+}
+
+.carrossel .lista .item .image.auraImgDs2 img{
+    filter: drop-shadow( 0px 70px 60px rgb(0, 0, 0));
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs3{
+    position: absolute;
+    top: 150px;
+    left: 45px;
+    content: '';
+    background-color: var(--shadow-color-ds3);
+    width: 900px;
+    height: 80px;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 300px 10px 250px 230px;
+    filter: blur(120px);
+ 
+}
+
+.carrossel .lista .item .conteudo-principal .conteudo #auraDs3::after{
+    position: absolute;
+    top: 650px;
+    left: 500px;
+    content: '';
+    background-color: var(--shadow-color-ds3);
+    width: 400px;
+    height: 200px;
+    filter: blur(100px);
+}
+
+.carrossel .lista .item .image.auraImgDs3 img{
+    filter: drop-shadow(-30px 10px 60px rgb(0, 0, 0));
+}
+
+.carrossel .lista .item .trailer.bb{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: "adobe-garamond-pro", serif;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px 1px #00000057;
+    transition: ease-in-out .2s;
+}
+.carrossel .lista .item .trailer.bb:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+
+.carrossel .lista .item .trailer.ds1{
+    background-color: #2e89ff;
+    color: rgb(19, 19, 19);
+    padding: 10px 30px;
+    font-family: "adobe-garamond-pro", serif;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px 1px #00000057;
+    transition: ease-in-out .2s;
+}
+.carrossel .lista .item .trailer.ds1:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+
+.carrossel .lista .item .trailer.ds2{
+    background-color: #cc4a34;
+    color: rgb(19, 19, 19);
+    padding: 10px 30px;
+    font-family: "adobe-garamond-pro", serif;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px 1px #00000057;
+    transition: ease-in-out .2s;
+}
+.carrossel .lista .item .trailer.ds2:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+
+.carrossel .lista .item .trailer.ds3{
+    background-color: #ddcf50;
+    color: rgb(19, 19, 19);
+    padding: 10px 30px;
+    font-family: "adobe-garamond-pro", serif;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px 1px #00000057;
+    transition: ease-in-out .2s;
+}
+.carrossel .lista .item .trailer.ds3:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
 }
