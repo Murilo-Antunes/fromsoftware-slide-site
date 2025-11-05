@@ -299,7 +299,7 @@ header nav{
 }
 
 .carrossel .lista .item .image.auraImgBB img{
-    filter: drop-shadow( 0px -40px 40px black);
+    filter: drop-shadow( 0px -40px 40px rgba(0, 0, 0, 0.575));
 }
 
 
@@ -330,7 +330,7 @@ header nav{
 }
 
 .carrossel .lista .item .image.auraImgDs img{
-    filter: drop-shadow( 0px 70px 60px rgb(0, 0, 0));
+    filter: drop-shadow( 30px 20px 60px rgba(0, 0, 0, 0.692));
 }
 
 .carrossel .lista .item .conteudo-principal .conteudo #auraDs2{
@@ -360,7 +360,7 @@ header nav{
 }
 
 .carrossel .lista .item .image.auraImgDs2 img{
-    filter: drop-shadow( 0px 70px 60px rgb(0, 0, 0));
+    filter: drop-shadow( 0px 0px 70px rgba(0, 0, 0, 0.712));
 }
 
 .carrossel .lista .item .conteudo-principal .conteudo #auraDs3{
@@ -390,7 +390,7 @@ header nav{
 }
 
 .carrossel .lista .item .image.auraImgDs3 img{
-    filter: drop-shadow(-30px 10px 60px rgb(0, 0, 0));
+    filter: drop-shadow(50px 10px 60px rgba(0, 0, 0, 0.445));
 }
 
 .carrossel .lista .item .trailer.bb{
