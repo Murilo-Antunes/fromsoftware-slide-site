@@ -5,10 +5,7 @@
     --darksouls3-background: #a07903;
     --border-color-black-bg: #fff5;
     --border-color-white-bg:rgba(61, 61, 61, 0.333);
-    --shadow-color-ds: rgb(117, 193, 255);
-    --shadow-color-ds2: rgb(255 0 0 / 75%);
-    --shadow-color-bloodborne2: rgb(255, 255, 255);;
-    --shadow-color-ds3: rgb(255 211 0 / 75%);
+    --shadow-color-detalhe: rgb(235 235 235 / 27%);
     --w-image: 500px;
     --calcular: calc(3 / 2);
 }
@@ -143,7 +140,7 @@ header nav{
     text-align: center;
     margin-bottom: 30px;
     width: 70%;
-    text-shadow: 0px 4px 3px rgb(0 0 0 / 42%);
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.234);
 }
 
 .carrossel .lista .item .conteudo-principal{
@@ -182,21 +179,23 @@ header nav{
 }
 
 .flecha button{
-    background-color: transparent;
-    border: 1px solid var(--border-color-black-bg);
+    border: 1px solid rgba(255, 255, 255, 0.478);
     color: #fff;
     font-family: monospace;
+    background-color: #0000005f;
     font-size: large;
     font-weight: bold;
     line-height: 0;
-    box-shadow: 0 10px 40px #5555;
+    box-shadow: 0 10px 40px #5555552b;
     cursor: pointer;
     transition: 0.5s;
+    backdrop-filter: blur(10px);
 }
 
 .flecha button:hover{
-    border: 1px solid var(--border-color-white-bg);
+    border: 1px solid rgba(0, 0, 0, 0.478);
     background-color: #ffffff88;
+    backdrop-filter: blur(10px);
     color: #000;
 }
 
@@ -250,8 +249,12 @@ header nav{
     }
 }
 
+
+
 .next .item.ativado .image{
+    z-index: 3;
     --transform-from: var(--w-image);
+    
 }
 
 
@@ -277,7 +280,7 @@ header nav{
     top: 70px;
     left: 150px;
     content: '';
-    background-color: var(--shadow-color-bloodborne2);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 100px;
     z-index: -1;
@@ -292,7 +295,7 @@ header nav{
     top: 450px;
     left: 600px;
     content: '';
-    background-color: var(--shadow-color-bloodborne2);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 200px;
     filter: blur(150px);
@@ -304,7 +307,7 @@ header nav{
     top: 650px;
     left: 80vw;
     content: '';
-    background-color: var(--shadow-color-bloodborne2);
+    background-color: var(--shadow-color-detalhe);
     width: 400px;
     height: 300px;
     filter: blur(170px);
@@ -320,7 +323,7 @@ header nav{
     top: 70px;
     left: 150px;
     content: '';
-    background-color: var(--shadow-color-ds);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 100px;
     z-index: -1;
@@ -335,7 +338,7 @@ header nav{
     top: 450px;
     left: 600px;
     content: '';
-    background-color: var(--shadow-color-ds);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 200px;
     filter: blur(150px);
@@ -347,7 +350,7 @@ header nav{
     top: 650px;
     left: 80vw;
     content: '';
-    background-color: var(--shadow-color-ds);
+    background-color: var(--shadow-color-detalhe);
     width: 400px;
     height: 300px;
     filter: blur(170px);
@@ -362,7 +365,7 @@ header nav{
     top: 70px;
     left: 150px;
     content: '';
-    background-color: var(--shadow-color-ds2);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 100px;
     z-index: -1;
@@ -377,7 +380,7 @@ header nav{
     top: 450px;
     left: 600px;
     content: '';
-    background-color: var(--shadow-color-ds2);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 200px;
     filter: blur(150px);
@@ -389,7 +392,7 @@ header nav{
     top: 650px;
     left: 80vw;
     content: '';
-    background-color: var(--shadow-color-ds2);
+    background-color: var(--shadow-color-detalhe);
     width: 400px;
     height: 300px;
     filter: blur(170px);
@@ -404,7 +407,7 @@ header nav{
     top: 70px;
     left: 150px;
     content: '';
-    background-color: var(--shadow-color-ds3);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 100px;
     z-index: -1;
@@ -419,7 +422,7 @@ header nav{
     top: 450px;
     left: 600px;
     content: '';
-    background-color: var(--shadow-color-ds3);
+    background-color: var(--shadow-color-detalhe);
     width: 200px;
     height: 200px;
     filter: blur(150px);
@@ -431,7 +434,7 @@ header nav{
     top: 650px;
     left: 80vw;
     content: '';
-    background-color: var(--shadow-color-ds3);
+    background-color: var(--shadow-color-detalhe);
     width: 400px;
     height: 300px;
     filter: blur(170px);
